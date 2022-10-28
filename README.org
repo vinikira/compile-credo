@@ -1,0 +1,35 @@
+#+title: Compile Credo
+#+author: Vinícius Simões <vinicius.simoes95@gmail.com>
+
+Compile regex for [[https://github.com/rrrene/credo][Credo]].
+
+* Installation
+** Manually
+Clone Compile repository to an arbitrary location:
+
+#+begin_src sh
+  $ git clone https://github.com/vinikira/compile-credo ~/.emacs.d/site-elisp/compile-credo
+#+end_src
+
+Add Flymake Credo directory to load-path in your Emacs initialization file (init.el) and load it.
+
+#+begin_src emacs-lisp
+  ;; add to load-path
+  (add-to-list 'load-path "/replace/me/to/compile-credo/full/path")
+
+  ;; load compile-credo feature
+  (require 'compile-credo nil t)
+#+end_src
+
+** Straight
+Add the following to your config file in order to install using straight:
+
+#+begin_src emacs-lisp
+  (straight-use-package
+   '(compile-credo :type git :host github :repo "vinikira/compile-credo" :branch "main"))
+
+  (require 'compile-credo nil t)
+#+end_src
+
+* References
+- https://github.com/Fuco1/compile-eslint
