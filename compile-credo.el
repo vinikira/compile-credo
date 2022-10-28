@@ -3,7 +3,7 @@
 ;; Author: Vinícius Simões
 ;; Maintainer: Vinícius Simões
 ;; Version: 0.0.1
-;; Package-Requires: (emacs26)
+;; Package-Requires: ()
 ;; Homepage: https://github.com/vinikira/compile-credo
 ;; Keywords: emacs elixir credo compilation
 
